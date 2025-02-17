@@ -1,6 +1,14 @@
-# Mentoring Curriculum: Foundations & Design Patterns in Kotlin
+# Mentoring Curriculum: Foundations of Software Design
 
-This curriculum covers foundational software design principles and gives dedicated sessions to each Gang of Four (GOF) design pattern. It is divided into four sections: Foundations, Design Patterns, Additional Topics, and Capstone.
+In today's fast-paced software landscape, we're constantly inundated with new technologies and layers of abstraction. 
+While these advancements offer significant benefits, they can also distract us from mastering the core foundational concepts that underpin solid software development. 
+This curriculum is designed to serve as both an intervention strategy for those looking to focus on fundamentals, and a refresher for those who wish to strengthen their understanding of the fundamentals.
+
+The curriculum is organized into four sections:
+1. **Foundations**
+2. **Design Patterns**
+3. **Additional Topics**
+4. **Capstone**
 
 ---
 

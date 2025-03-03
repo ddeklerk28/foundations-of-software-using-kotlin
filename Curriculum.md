@@ -14,7 +14,7 @@ The curriculum is organized into four sections:
 
 ## Section I: Foundations
 
-### Session 1: Introduction & Goal Setting
+### Session 1: [Introduction & Goal Setting](lessons/1_1_introduction-and-goal-setting/introduction-and-goal-setting.md)
 - **Objectives:**
     - Establish the mentoring relationship and set expectations.
     - Introduce the importance of foundational principles in software design.
@@ -22,7 +22,7 @@ The curriculum is organized into four sections:
     - Review current knowledge.
     - Discuss real-world scenarios emphasizing the value of a strong foundation.
 
-### Session 2: Object-Oriented Programming (OOP) – Fundamentals
+### Session 2: [Object-Oriented Programming (OOP) – Fundamentals](lessons/1_2_oop-fundamentals/oop-fundamentals.md)
 - **Topics:**
     - Basic OOP concepts: classes, objects, encapsulation, inheritance, abstraction, and polymorphism.
 - **Kotlin Exercises:**

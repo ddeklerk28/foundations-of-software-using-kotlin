@@ -173,7 +173,7 @@ class Merchant(name: String) : NPC(name) {
 ## **Additional Resources**
 
 - [Official Kotlin Documentation on Classes and Objects](https://kotlinlang.org/docs/classes.html)
-- [OOP Principles Explained with Game Development Examples](#)
+- [OOP Principles with Game Development](https://bleedingedge.studio/blog/game-development-oop-in-gaming-concept-24/)
 
 ---
 

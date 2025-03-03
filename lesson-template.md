@@ -44,7 +44,3 @@ A brief overview of what this lesson covers and its importance within the curric
 ## Reflection / Feedback
 - Questions to reflect on the lesson.
 - Space for notes on what worked well and what could be improved.
-
----
-
-*Optional: Include any further reading, quizzes, or discussion prompts here.*

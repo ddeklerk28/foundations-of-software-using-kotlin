@@ -236,12 +236,28 @@ A brief overview of each principle with intuitive game analogies:
 ## **Exercise Instructions**
 
 1. **Composition Over Inheritance**
+   - You are given an implementation of a `Monster` system that uses class inheritance to model different types of monsters and their behaviors (e.g., walking, flying).  
+   Your task is to **refactor this implementation to use composition instead of inheritance**.
 
-    - Create a `Monster` class composed of `AttackAbility`, `DefenseAbility`, and `MovementAbility`. Implement them as separate classes and inject them into the monster.
+   - Specifically:
+     - Create a single, flexible `Monster` class that is **composed of** individual behavior components: `AttackAbility`, `DefenseAbility`, and a **movement behavior** passed in as a lambda (`() -> Unit`).
+     - Each behavior should be implemented in a separate class and injected into the `Monster` via its constructor.
+
+   - This exercise will help you understand how **composition leads to more flexible and reusable code**, and how **behavior can be decoupled from structure** without complex inheritance hierarchies.
+
 
 2. **Cohesion/Coupling Reflection**
+    - You are given a `GameManager` class that handles multiple unrelated responsibilities such as player stats, inventory management, enemy spawning, and messaging.
 
-    - Take a `GameManager` class (or create a dummy one) and split it into smaller, more cohesive classes. Identify and reduce coupling.
+    - Your task is to **refactor this class into smaller, more cohesive components**, each with a single, well-defined responsibility.
+
+    - Specifically:
+      - Identify areas where the `GameManager` class is doing too much (low cohesion).
+      - Split the responsibilities into separate classes such as `PlayerStatsManager`, `InventoryManager`, `EnemySpawner`, and `MessageService`.
+      - Ensure these components interact through **well-defined abstractions**, not concrete implementations, to reduce coupling and increase flexibility.
+
+    - This exercise will help you develop an intuition for **designing modular systems**, and reinforce the importance of **single responsibility** and **dependency decoupling** in scalable software design.
+
 
 ---
 
@@ -267,7 +283,3 @@ A brief overview of each principle with intuitive game analogies:
 - Think of a real system you’ve worked on—how would you refactor it using SOLID ideas?
 
 ---
-
-*Version 1.0 – Last updated: [Insert Date]*\
-*Instructor Notes: Use concrete before/after code examples for SOLID refactoring. Encourage mentees to relate these to real systems they've built or used.*
-

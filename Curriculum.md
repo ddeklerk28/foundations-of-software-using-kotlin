@@ -29,7 +29,7 @@ The curriculum is organized into four sections:
     - Create simple classes and objects.
     - Implement encapsulation using getters and setters.
 
-### Session 3: Advanced OOP & Introduction to SOLID
+### Session 3: [Advanced OOP & Introduction to SOLID](lessons/1_3_advanced-oop-and-intro-to-solid/advanced-oop-and-introduction-to-solid.md)
 - **Topics:**
     - Advanced OOP concepts: composition vs. inheritance.
     - Brief introduction to SOLID principles as a natural progression of OOP best practices.

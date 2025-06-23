@@ -146,18 +146,79 @@ class DamageCalculator(private val strategy: DamageStrategy) {
 
 ## **Exercise Instructions**
 
-### **1. SRP Refactor Task**
+### ✨ 1. SRP Refactor Task – GameManager Breakdown
 
-Refactor the following class to adhere to the Single Responsibility Principle:
+Refactor the following `GameManager` class which currently violates the **Single Responsibility Principle (SRP)** by handling multiple responsibilities in one class.
+
+Your task is to:
+
+- Identify distinct responsibilities.
+- Move them into dedicated classes.
+- Ensure that each class does **one thing only** and does it well.
+- Use composition in `main()` or a coordinator class to bring them together.
+
+#### ❌ Initial Implementation
 
 ```kotlin
-class PlayerManager {
-    fun saveToFile() { /* ... */ }
-    fun loadFromFile() { /* ... */ }
-    fun calculateScore() { /* ... */ }
-    fun updateLevel() { /* ... */ }
+// Initial implementation of GameManager that violates SRP
+// Your task is to refactor this into separate classes with distinct responsibilities
+
+class GameManager {
+    private var playerName = "Hero"
+    private var playerHealth = 100
+    private val inventory = mutableListOf<String>()
+
+    // Handles player damage
+    fun damagePlayer(amount: Int) {
+        playerHealth -= amount
+        if (playerHealth < 0) playerHealth = 0
+        println("$playerName took $amount damage. Health is now $playerHealth.")
+    }
+
+    // Manages inventory actions
+    fun addItemToInventory(item: String) {
+        inventory.add(item)
+        println("$item added to inventory.")
+    }
+
+    // Spawns an enemy
+    fun spawnEnemy(enemyType: String) {
+        println("Spawning enemy of type: $enemyType")
+    }
+
+    // Displays overall game status
+    fun showStatus() {
+        println("Player: $playerName, Health: $playerHealth")
+        println("Inventory: $inventory")
+    }
+}
+
+fun main() {
+    // TODO: Refactor GameManager into separate classes with single responsibilities.
+    // Step 1: Identify the different responsibilities in GameManager.
+    // Step 2: Create classes such as Player, InventoryManager, EnemySpawner, and GameController.
+    // Step 3: Inject dependencies into a new version of GameManager or coordinate them from Main.
+    // Step 4: Demonstrate usage by interacting with refactored components below.
+
+    val gameManager = GameManager()
+    gameManager.damagePlayer(20)
+    gameManager.addItemToInventory("Health Potion")
+    gameManager.spawnEnemy("Orc")
+    gameManager.showStatus()
 }
 ```
+
+#### ✅ Goal
+
+Refactor this into a system where:
+
+- `Player` handles health and name.
+- `InventoryManager` handles inventory.
+- `EnemySpawner` handles spawning logic.
+- `GameController` or `main()` coordinates them.
+
+> **Remember:** Each class should have a **single reason to change**.
+
 
 # 🧩 Open/Closed Principle (OCP) – Exercise
 

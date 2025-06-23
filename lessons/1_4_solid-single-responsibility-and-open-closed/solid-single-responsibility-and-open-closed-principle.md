@@ -159,18 +159,44 @@ class PlayerManager {
 }
 ```
 
-### **2. OCP Refactor Task**
+# 🧩 Open/Closed Principle (OCP) – Exercise
 
-Refactor the following class using the Strategy Pattern to support extension:
+## Goal
+
+Refactor the provided `ReportPrinter` implementation to follow the **Open/Closed Principle**:
+> “Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.”
+
+This exercise is designed to reinforce the importance of **programming to abstractions** and using **polymorphism** to support extensibility without changing existing code.
+
+---
+
+## 🚦 The Problem
+
+The following implementation violates the OCP. Every time you need to support a new report format, you must modify `ReportPrinter`.
 
 ```kotlin
-class RewardSystem {
-    fun calculateReward(type: String): Int {
-        return when (type) {
-            "gold" -> 100
-            "silver" -> 50
-            else -> 10
-        }
+fun main() {
+    // TODO: Extend this without modifying existing logic.
+    // Goal: Apply the Open/Closed Principle (OCP)
+
+    val logger = Logger()
+    val basicReport = Report("Player stats")
+    val reportPrinter = ReportPrinter()
+
+    reportPrinter.print(basicReport, logger)
+}
+
+class Report(val content: String)
+
+class Logger {
+    fun log(message: String) {
+        println("[LOG] $message")
+    }
+}
+
+class ReportPrinter {
+    fun print(report: Report, logger: Logger) {
+        logger.log("Printing report: ${report.content}")
     }
 }
 ```

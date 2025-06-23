@@ -36,7 +36,7 @@ The curriculum is organized into four sections:
 - **Discussion:**
     - When and why to favor composition over inheritance.
 
-### Session 4: SOLID Principles – Single Responsibility & Open/Closed
+### Session 4: [SOLID Principles – Single Responsibility & Open/Closed](lessons/1_4_solid-single-responsibility-and-open-closed/solid-single-responsibility-and-open-closed-principle.md)
 - **Topics:**
     - **Single Responsibility Principle (SRP):** Each class should have one responsibility.
     - **Open/Closed Principle (OCP):** Software entities should be open for extension but closed for modification.

@@ -19,18 +19,18 @@ class InventoryManager {
 
     fun addItem(item: String) {
         items.add(item)
-        println("\$item added to inventory.")
+        println("$item added to inventory.")
     }
 
     fun showInventory() {
-        println("Inventory: \$items")
+        println("Inventory: $items")
     }
 }
 
 // Responsible for enemy creation
 class EnemySpawner {
     fun spawn(enemyType: String) {
-        println("Spawning enemy of type: \$enemyType")
+        println("Spawning enemy of type: $enemyType")
     }
 }
 

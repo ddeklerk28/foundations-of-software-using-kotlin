@@ -10,24 +10,24 @@ class GameManager {
     fun damagePlayer(amount: Int) {
         playerHealth -= amount
         if (playerHealth < 0) playerHealth = 0
-        println("\$playerName took \$amount damage. Health is now \$playerHealth.")
+        println("$playerName took $amount damage. Health is now $playerHealth.")
     }
 
     // Manages inventory actions
     fun addItemToInventory(item: String) {
         inventory.add(item)
-        println("\$item added to inventory.")
+        println("$item added to inventory.")
     }
 
     // Spawns an enemy
     fun spawnEnemy(enemyType: String) {
-        println("Spawning enemy of type: \$enemyType")
+        println("Spawning enemy of type: $enemyType")
     }
 
     // Displays overall game status
     fun showStatus() {
-        println("Player: \$playerName, Health: \$playerHealth")
-        println("Inventory: \$inventory")
+        println("Player: $playerName, Health: $playerHealth")
+        println("Inventory: $inventory")
     }
 }
 
